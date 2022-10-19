@@ -40,11 +40,11 @@ namespace Lab1
             // 
             // chart1
             // 
-            chartArea1.AxisX.InterlacedColor = System.Drawing.Color.White;
-            chartArea1.AxisX.LineWidth = 3;
+            chartArea1.AxisX.InterlacedColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.Title = "Елемент";
-            chartArea1.AxisY.LineWidth = 3;
             chartArea1.AxisY.Title = "Частота";
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.BorderWidth = 0;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -53,6 +53,7 @@ namespace Lab1
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
+            series1.BorderColor = System.Drawing.Color.Black;
             series1.ChartArea = "ChartArea1";
             series1.Color = System.Drawing.Color.DarkTurquoise;
             series1.Legend = "Legend1";
@@ -61,7 +62,6 @@ namespace Lab1
             this.chart1.Size = new System.Drawing.Size(809, 659);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // Histogram
             // 
